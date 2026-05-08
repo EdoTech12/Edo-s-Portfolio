@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
 body{
     background-color: oklch(29.3% 0.066 243.157);
+    font-family: 'DM Sans', sans-serif;
 }

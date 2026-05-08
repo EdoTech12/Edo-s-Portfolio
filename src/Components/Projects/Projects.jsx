@@ -1,5 +1,6 @@
 import MainCard from "./Card/MainCard";
 import OptionsCard from "./Card/OptionsCard";
+import WalletDashImg from "../../Assets/dashboard.png"
 import { ArrowRight } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useState } from "react";
@@ -8,7 +9,7 @@ const projects = [
     {
         id: 1,
         title: "WalletDash",
-        imagePath: "src/Assets/dashboard.png",
+        imagePath: WalletDashImg,
         githubLink: "https://github.com/EdoTech12/WalletDash",
         description: "Web app per la gestione delle finanze personali. Permette di tracciare entrate e uscite, monitorare il saldo e impostare obiettivi finanziari con deadline.",
         technologies: "ASP.NET · Entity Framework Core"

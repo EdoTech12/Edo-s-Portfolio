@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import aboutImg from "../../Assets/about_img.jpeg"
 
 function About() {
     return ( 
@@ -20,7 +21,7 @@ function About() {
                     </div>
                 </div>
                 <div className="w-1/3 hidden lg:block">
-                    <img src="src/Assets/about_img.jpeg" alt="" className="rounded-2xl"/>
+                    <img src={aboutImg} alt="" className="rounded-2xl"/>
                 </div>
             </motion.div>
         </section>
