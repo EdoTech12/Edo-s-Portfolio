@@ -16,7 +16,7 @@ function OptionsCard({ id, title, description, technologies, githubLink, setInde
                     <a className="text-blue-200 hover:text-cyan-300 cursor-pointer hidden md:block" onClick={() => setIndex(id)}>
                         <Eye />
                     </a>
-                    {deploy && <a href={liveLink} className="text-blue-200 hover:text-cyan-300 cursor-pointer hidden md:block">
+                    {deploy && <a href={liveLink} className="text-blue-200 hover:text-cyan-300 cursor-pointer">
                         <ExternalLink />
                     </a>}
                 </div>
