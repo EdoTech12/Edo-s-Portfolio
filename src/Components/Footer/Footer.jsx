@@ -5,7 +5,7 @@ function Footer() {
             <div className="flex gap-2">
                 <a href="https://github.com/EdoTech12"> GitHub </a>
                 <span> · </span>
-                <a href="mailto:edoardotesser.work@gmail.com"> Email</a>
+                <a href="mailto:edoardotesser.work@gmail.com">edoardotesser.work@gmail.com</a>
             </div>
         </section>
     );
