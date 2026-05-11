@@ -1,16 +1,43 @@
-# React + Vite
+# 🧑‍💻 Edoardo Tesser — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sito portfolio personale sviluppato con React, Vite e Tailwind CSS. Presenta chi sono, le mie skills, la mia esperienza e i miei progetti.
 
-Currently, two official plugins are available:
+🔗 **Live:** [edo-s-portfolio.vercel.app](https://edo-s-portfolio.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Sezioni
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Hero** — presentazione con typing animation
+- **Chi sono** — background personale
+- **Skills** — stack tecnico diviso per categoria
+- **Esperienza** — timeline con lo stage presso Overbi S.r.l.
+- **Progetti** — WalletDash e Osteria del Naviglio
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-black?style=for-the-badge&logo=framer&logoColor=white)
+
+---
+
+## 🚀 Setup locale
+
+```bash
+git clone https://github.com/EdoTech12/Edo-s-Portfolio.git
+cd Edo-s-Portfolio
+npm install
+npm run dev
+```
+
+---
+
+## 👤 Autore
+
+**Edoardo Tesser** — [@EdoTech12](https://github.com/EdoTech12)
+
+> Studente di informatica aperto a opportunità di stage estivo nello sviluppo web.
