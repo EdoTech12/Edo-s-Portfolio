@@ -1,6 +1,7 @@
 import MainCard from "./Card/MainCard";
 import OptionsCard from "./Card/OptionsCard";
 import WalletDashImg from "../../Assets/dashboard.png"
+import OsteriaImg from "../../Assets/osteria.png"
 import { ArrowRight } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useState } from "react";
@@ -12,7 +13,19 @@ const projects = [
         imagePath: WalletDashImg,
         githubLink: "https://github.com/EdoTech12/WalletDash",
         description: "Web app per la gestione delle finanze personali. Permette di tracciare entrate e uscite, monitorare il saldo e impostare obiettivi finanziari con deadline.",
-        technologies: "ASP.NET · Entity Framework Core"
+        technologies: "ASP.NET · Entity Framework Core",
+        deploy: false,
+        liveLink: ""
+    },
+    {
+        id: 2,
+        title: "Osteria del Naviglio | Busto Arsizio",
+        imagePath: OsteriaImg,
+        githubLink: "https://github.com/EdoTech12/osteria-del-naviglio",
+        description: "Sito vetrina demo per ristorante italiano sviluppato come progetto portfolio.",
+        technologies: "React · Vite · Tailwind CSS v4 · Framer Motion",
+        deploy: true,
+        liveLink: "https://osteria-del-naviglio.vercel.app/"
     }
 ];
 
@@ -47,13 +60,13 @@ function Projects() {
                             exit={{ opacity: 0, y: -8 }}
                             transition={{ duration: 0.25 }}
                         >
-                            <MainCard title={project.title} imagePath={project.imagePath} description={project.description} technologies={project.technologies} githubLink={project.githubLink}/>
+                            <MainCard title={project.title} deploy={project.deploy} liveLink={project.liveLink} imagePath={project.imagePath} description={project.description} technologies={project.technologies} githubLink={project.githubLink}/>
                         </motion.div>
                     </AnimatePresence>
 
                     <div className="flex flex-col lg:flex-row gap-3 mt-10 justify-center">
                         {projects.map(p => (
-                            <OptionsCard title={p.title} description={p.description} githubLink={p.githubLink} id={p.id} technologies={p.technologies} setIndex={setIndex}/>
+                            <OptionsCard title={p.title} key={p.id} liveLink={p.liveLink} deploy={p.deploy} description={p.description} githubLink={p.githubLink} id={p.id} technologies={p.technologies} setIndex={setIndex}/>
                         ))}
                     </div>
                     
